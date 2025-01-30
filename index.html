@@ -22,9 +22,11 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'color1': '#111111',
+                'accent': '#FFDC26',
               },
              fontFamily:{
-                  poppins: ["Poppins", "serif"],
+                  sora: ["Sora", "serif"],
                   adlam: ["ADLaM Display", "serif"],
              } 
             }
@@ -52,15 +54,17 @@
 
         <nav class="w-full bg-[#FFF9F4] border-b border-gray-400 lg:border-none overflow-hidden ">
           <div class="navbar w-11/12 mx-auto ">
-            <div class="navbar-start">
-              
-              <a class="btn btn-ghost text-xl">daisyUI</a>
+            <div class="navbar-start flex items-center  gap-3">
+              <img src="./images/logo-header.png" alt="">
+              <a class=" text-xl hidden font-sora font-bold lg:flex ">Browse <span class="text-yellow-300">4</span> Pets</a>
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
-                <li><a>Item 1</a></li>
+                <li><a class="font-sora text-color1 text-sm">Find a pet</a></li>
+                <li><a class="font-sora text-color1 text-sm">Breeds</a></li>
+                <li><a class="font-sora text-color1 text-sm">Contact us</a></li>
                 
-                <li><a>Item 3</a></li>
+                
               </ul>
             </div>
             <div class="navbar-end">
@@ -68,8 +72,8 @@
                 <i class="fa-regular fa-bell"></i>
   
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <a class="btn">Button</a>
-                <a class="btn">Button</a>
+                <a class="px-5 rounded-lg py-2 text-sm text-color1 bg-none border border-accent ">Login</a>
+                <a class="px-5 rounded-lg py-2 text-sm text-color1  border-none bg-accent">Register</a>
               </div>
 
               <div class="dropdown lg:hidden">
@@ -90,15 +94,9 @@
                 <ul
                   tabindex="0"
                   class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a>Item 1</a></li>
-                  <li>
-                    <a>Parent</a>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </li>
-                  <li><a>Item 3</a></li>
+                  <li><a class="font-sora text-color1 text-sm">Find a pet</a></li>
+                <li><a class="font-sora text-color1 text-sm">Breeds</a></li>
+                <li><a class="font-sora text-color1 text-sm">Contact us</a></li>
                 </ul>
               </div>
 
